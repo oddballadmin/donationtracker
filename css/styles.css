@@ -1,0 +1,150 @@
+
+
+body{
+    background-color: rgba(255, 235, 205, 0.25);
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 100%;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+header{
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: end;
+}
+nav{
+    display: flex;
+    flex-basis: 50%;
+    gap: 2rem;
+}
+.nav-item{
+    justify-content: space-evenly;
+
+    display: inline-flex;
+    flex: 1 1 100%;
+}
+.login-section{
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+}
+.app-form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+.app-form input{
+    border-bottom: 1px black solid;
+    box-shadow: 0 0 4px black;
+    border-radius: 50vh;
+}
+.app-form input[placeholder]{
+    padding: 0.2rem 0.4rem;
+}
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.btn-group button{
+    flex: 1 1 50%;
+    min-width: 50%;
+    padding: 1rem .5rem;
+    background-color: rgba(0,0,0,.3);
+}
+.donation-info{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.lbl-group{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    flex: 1 1 100%;
+    background-color: rgba(0,0,0,.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-graph{
+    display: flex;
+    flex: 1 1 100%;
+}
+.donation-form{
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+.donation-form .app-form{
+    gap: 2rem;
+    flex: 1 1 50%;
+}
+.total-donated{
+    flex: 1 1 50%;
+}
+.donation-graph{
+    display: inline-flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    width: 80%;
+
+}
+.about{
+    display: flex;
+    flex: 2 2 100%;
+}
+.about p{
+    flex: 1 1 50%;
+    padding-inline: 15rem;
+}
+@media (max-width: 425px) {
+    .donation-info{
+        flex-flow: column nowrap;
+    }
+    .donation-form{
+        flex-flow: column nowrap;
+        gap: 2rem;
+    }
+    header{
+        justify-content: center;
+    }
+    nav{
+        flex-flow: column nowrap;
+    }
+    .nav-item{
+        align-content: center;
+        justify-content: center;
+    }
+    .donation-graph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #graph {
+        width: 100%;
+    }
+    .about{
+        display: flex;
+        flex: 2 2 100%;
+    }
+    .about p{
+        flex: 1 1 50%;
+        padding-inline: 0;
+        text-align: center;
+    }
+}
+
+

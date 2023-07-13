@@ -1,0 +1,108 @@
+/* Box sizing border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles (bullets, indentation) */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Set default font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove text decoration for links */
+a {
+    text-decoration: none;
+}
+
+/* Remove outline on focus */
+:focus {
+    outline: none;
+}
+
+/* Remove default form styles */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+/* Remove default button styles */
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Remove border on images */
+img {
+    border-style: none;
+}
+
+/* Reset table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset form field styles */
+input,
+select,
+textarea {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    resize: none;
+}
+
+/* Normalize vertical alignment on input elements */
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: baseline;
+}
+
+/* Additional styles for better cross-browser compatibility */
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Add more specific resets or customizations as needed */

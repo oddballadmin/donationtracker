@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Inventory Manager: Create A Password</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <nav>
+      <div class="nav-item"><a href="index.html">Home</a></div>
+      <div class="nav-item"><a href="app.html">Dashboard</a></div>
+      <div class="nav-item"><a href="about.html">About</a></div>
+    </nav>
+  </header>
+  <section class="donation-info">
+    <div class="lbl-group">
+    <h3>Last Donation</h3>
+      <h2 id="last-donated-lbl">0</h2>
+    </div>
+    <div class="lbl-group">
+    <h3>Donations left to meet quota</h3>
+      <h2 id="donation-left-lbl">0</h2>
+    </div>
+  </section>
+  <section class="donation-graph">
+    <canvas id="graph">
+
+    </canvas>
+  </section>
+  <section class="donation-form">
+    <form class="app-form" action="">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <div class="btn-group">
+      <button type="submit" id="sub-btn">Submit</button>
+      <button type="reset">Clear</button>
+      </div>
+    </form>
+    <div class="total-donated lbl-group">
+      <h3>Total Amount Donated</h3>
+      <h2 id="total-donated-lbl">0</h2>
+    </div>
+  </section>
+
+
+</div>
+<script src="/scripts/validationUtils.js"></script>
+<script src="/scripts/app.js"></script>
+</body>
+</html>
